@@ -11,12 +11,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.imagefinder.R
-import com.example.imagefinder.common.ui.component.toolbar.ToolBar
+import com.example.common.ui.component.toolbar.ToolBar
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.example.imagefinder.common.ui.component.EmptyScreen
-import com.example.imagefinder.common.ui.component.ProgressIndicator
+import com.example.common.ui.component.EmptyScreen
+import com.example.common.ui.component.ProgressIndicator
 import com.example.imagefinder.feature.imagelist.ui.component.InnerContent
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch

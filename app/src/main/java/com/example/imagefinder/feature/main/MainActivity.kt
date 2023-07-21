@@ -8,7 +8,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 
 import androidx.compose.ui.Modifier
-import com.example.imagefinder.common.ui.theme.ImageFinderTheme
+import com.example.common.ui.theme.ImageFinderTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

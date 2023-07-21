@@ -13,9 +13,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.imagefinder.R
-import com.example.imagefinder.common.ui.component.TextIcon
-import com.example.imagefinder.common.ui.theme.ImageFinderTheme
-import com.example.imagefinder.common.ui.theme.Space
+import com.example.common.ui.component.TextIcon
+import com.example.common.ui.theme.ImageFinderTheme
+import com.example.common.ui.theme.Space
 
 
 @Composable

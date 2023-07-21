@@ -15,10 +15,10 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.imagefinder.common.ui.component.NetworkImage
+import com.example.common.ui.component.NetworkImage
 import com.example.imagefinder.R
-import com.example.imagefinder.common.ui.theme.ImageFinderTheme
-import com.example.imagefinder.common.ui.theme.Space
+import com.example.common.ui.theme.ImageFinderTheme
+import com.example.common.ui.theme.Space
 
 @Composable
 fun ImageDetailHeader(

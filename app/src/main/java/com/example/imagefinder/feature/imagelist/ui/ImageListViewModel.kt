@@ -1,17 +1,15 @@
 package com.example.imagefinder.feature.imagelist.ui
 
-import android.util.Log
 import androidx.annotation.StringRes
-import androidx.compose.material.pullrefresh.rememberPullRefreshState
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.common.exception.ConnectionError
+import com.example.data.repository.ImageRepository
 import com.example.imagefinder.R
-import com.example.imagefinder.common.exception.ConnectionError
-import com.example.imagefinder.data.Image
-import com.example.imagefinder.data.ImageRepository
 import com.example.imagefinder.feature.imagelist.ui.model.ErrorUiState
 import com.example.imagefinder.feature.imagelist.ui.model.ImageListUiState
 import com.example.imagefinder.feature.imagelist.ui.model.ImageUiState
+import com.example.model.Image
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch

@@ -3,10 +3,10 @@ package com.example.imagefinder.feature.imagedetail.ui
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.imagefinder.data.Image
-import com.example.imagefinder.data.ImageRepository
+import com.example.data.repository.ImageRepository
 import com.example.imagefinder.feature.imagedetail.ui.model.ImageDetailUiState
 import com.example.imagefinder.feature.route.ImageDetailDestination
+import com.example.model.Image
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import javax.inject.Inject

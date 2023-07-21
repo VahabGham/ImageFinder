@@ -10,8 +10,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.imagefinder.common.ui.theme.ImageFinderTheme
-import com.example.imagefinder.common.ui.theme.Space
+import com.example.common.ui.theme.ImageFinderTheme
+import com.example.common.ui.theme.Space
 import com.example.imagefinder.feature.imagelist.ui.model.ImageUiState
 
 @OptIn(ExperimentalFoundationApi::class)
