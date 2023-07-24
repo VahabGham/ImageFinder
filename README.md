@@ -39,5 +39,4 @@ Still no UI tests.
 
 # Future Steps
 - Search feature
-- Modularization
 - Ui-Test
