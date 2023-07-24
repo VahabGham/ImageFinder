@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.imagelist'
+    namespace 'com.vahab.imagelist'
     compileSdk 33
 
     defaultConfig {

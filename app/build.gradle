@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.imagefinder'
+    namespace 'com.vahab.imagefinder'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.imagefinder"
+        applicationId "com.vahab.imagefinder"
         minSdk 24
         targetSdk 33
         versionCode 1

@@ -19,12 +19,10 @@ The app follows an `MVVM` architecture and `Version Catalog` system for handling
 
 # Modularization
 
-The app has only one module now 
-- `app` which contains the application entry point, the MainActivity and ;
-- exposing and make the data layer reusable,
-- defining the core navigation, 
-- defining the Jetpack Compose theme,
-- defining some Jetpack Compose reusable components, etc...
+The app is fully modularized:
+- `app` has entry point, the MainActivity;
+- `core` has all the libraries' modules for delegating reusable business logic, exposing and make the data layer reusable, defining the core navigation, defining the Jetpack Compose theme, defining some Jetpack Compose reusable components, etc...
+- `feature` which contains the current features ImageList and ImageDetailList
 
 
 # UI
