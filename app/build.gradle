@@ -45,18 +45,16 @@ dependencies {
     implementation project(':core:common')
     implementation project(':core:model')
     implementation project(':core:data')
+    implementation project(':core:network') // TODO : this should be removed after moving test classed from this module
+    implementation project(':core:navigation')
+
+    // features
+    implementation project(':feature:imagelist')
+    implementation project(':feature:imagelistdetail')
 
 
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle
-    implementation libs.androidx.lifecycle.compose
-    implementation libs.androidx.activity.compose
-
-    implementation libs.androidx.compose.ui
-    implementation libs.androidx.compose.ui.tooling.preview
-    debugImplementation libs.androidx.compose.ui.tooling
-    debugImplementation libs.androidx.compose.ui.test.manifest
-    androidTestImplementation libs.androidx.compose.ui.test.junit4
 
     implementation libs.androidx.compose.material
     implementation libs.androidx.compose.material3
