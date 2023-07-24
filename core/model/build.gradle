@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.model'
+    namespace 'com.vahab.model'
     compileSdk 33
 
     defaultConfig {

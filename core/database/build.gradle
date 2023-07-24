@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.database'
+    namespace 'com.vahab.database'
     compileSdk 33
 
     defaultConfig {

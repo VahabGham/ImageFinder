@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.network'
+    namespace 'com.vahab.network'
     compileSdk 33
 
     defaultConfig {
