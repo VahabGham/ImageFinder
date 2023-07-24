@@ -14,3 +14,11 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ImageFinder"
 include ':app'
+include ':core:common'
+include ':feature:imagelist'
+include ':feature:imagelistdetail'
+include ':core:data'
+include ':core:model'
+include ':core:network'
+include ':core:database'
+include ':core:navigation'

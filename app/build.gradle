@@ -16,9 +16,6 @@ android {
         versionCode 1
         versionName "1.0"
 
-        buildConfigField "String", "BASE_URL", '"https://pixabay.com/"'
-        buildConfigField "String", "API_KEY", '"34781706-8801ce83562d6a15908f154fd"'
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -45,35 +42,27 @@ android {
 
 dependencies {
 
+    implementation project(':core:common')
+    implementation project(':core:model')
+    implementation project(':core:data')
+    implementation project(':core:network') // TODO : this should be removed after moving test classed from this module
+    implementation project(':core:navigation')
+
+    // features
+    implementation project(':feature:imagelist')
+    implementation project(':feature:imagelistdetail')
+
+
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle
-    implementation libs.androidx.lifecycle.compose
-    implementation libs.androidx.activity.compose
-
-    implementation libs.androidx.compose.ui
-    implementation libs.androidx.compose.ui.tooling.preview
-    debugImplementation libs.androidx.compose.ui.tooling
-    debugImplementation libs.androidx.compose.ui.test.manifest
-    androidTestImplementation libs.androidx.compose.ui.test.junit4
 
     implementation libs.androidx.compose.material
     implementation libs.androidx.compose.material3
 
+
     implementation libs.hilt.android
     implementation libs.androidx.hilt.navigation.compose
     kapt libs.hilt.compiler
-
-    implementation libs.retrofit
-    implementation libs.retrofit.converter.moshi
-    implementation libs.squareup.moshi
-    implementation libs.squareup.okhttp
-
-    implementation libs.androidx.room.runtime
-    implementation libs.androidx.room.ktx
-    annotationProcessor libs.androidx.room.compiler
-    kapt libs.androidx.room.compiler
-
-    implementation libs.coil.compose
 
     implementation libs.androidx.navigation
 

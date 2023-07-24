@@ -1,22 +1,20 @@
 package com.example.imagefinder.ui
 
 import androidx.lifecycle.SavedStateHandle
-import androidx.lifecycle.viewmodel.compose.viewModel
 import app.cash.turbine.test
-import com.example.imagefinder.data.ImageRepository
-import com.example.imagefinder.data.asEntity
-import com.example.imagefinder.data.asExternal
+import com.example.data.model.asEntity
+import com.example.data.model.asExternal
+import com.example.data.repository.ImageRepository
 import com.example.imagefinder.data.imageData
-import com.example.imagefinder.feature.imagedetail.ui.ImageDetailViewModel
-import com.example.imagefinder.feature.route.ImageDetailDestination
+import com.example.imagelistdetail.ui.ImageDetailViewModel
 import com.example.imagefinder.util.MainDispatcherRule
+import com.example.navigation.route.ImageDetailDestination
 import io.mockk.clearAllMocks
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flowOf
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.runTest
 import org.junit.After
 import org.junit.Before

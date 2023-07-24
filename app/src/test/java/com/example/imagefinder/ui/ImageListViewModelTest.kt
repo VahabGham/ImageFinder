@@ -1,18 +1,19 @@
 package com.example.imagefinder.ui
 
 import app.cash.turbine.test
+import com.example.common.exception.ConnectionError
+import com.example.data.model.asEntity
+import com.example.data.model.asExternal
+import com.example.data.repository.ImageRepository
 import com.example.imagefinder.R
-import com.example.imagefinder.common.exception.ConnectionError
 import com.example.imagefinder.data.*
-import com.example.imagefinder.feature.imagelist.ui.ImageListViewModel
-import com.example.imagefinder.feature.imagelist.ui.model.ImageListUiState
-import com.example.imagefinder.feature.imagelist.ui.model.ImageUiState
 import com.example.imagefinder.util.MainDispatcherRule
+import com.example.imagelist.ui.ImageListViewModel
+import com.example.imagelist.ui.model.ImageListUiState
+import com.example.imagelist.ui.model.ImageUiState
 import io.mockk.*
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.runTest
 import org.junit.After
 import org.junit.Before

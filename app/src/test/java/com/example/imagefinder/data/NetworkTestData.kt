@@ -1,5 +1,7 @@
 package com.example.imagefinder.data
 
+import com.example.network.model.ImageResponse
+import com.example.network.model.ImagesResponse
 import io.mockk.every
 import io.mockk.mockk
 
